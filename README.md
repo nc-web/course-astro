@@ -1,2 +1,4 @@
-# course-visual-studio-code
-Course NC - Visual Studio Code
+
+# COURSE ASTRO
+
+    - Course NC - Astro
