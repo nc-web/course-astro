@@ -1,6 +1,17 @@
 ---
-import Card01tgt from '../components/cards/Card01.astro' 
+// Styles
+import '../assets/css/global-styles.css'
+
+import SectionLoginDesktop from '../views/login/SectionLoginDesktop.astro'
+
+// Views
+import MenuDesktop from '../views/menu/MenuDesktop.astro'
+import Card01 from '../views/cards/Card01.astro' 
 ---
+
+<script>
+
+</script>
 
 <html lang="en">
 	<head>
@@ -11,7 +22,7 @@ import Card01tgt from '../components/cards/Card01.astro'
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
-		<Card01tgt></Card01tgt>
+		<MenuDesktop></MenuDesktop>
+		<Card01></Card01>
 	</body>
 </html>
