@@ -1,0 +1,103 @@
+---
+import Logo from '/img/logo.png'
+---
+
+<div class='menu'>
+    <div class='menu__logo'>
+        <div>
+            <img src={Logo} alt='logo'/>
+        </div>
+
+        <div>
+            <h4>Company</h4>
+        </div>
+    </div>
+
+    <nav class='menu__nav'>
+        <a href='/'>
+            <div class='menu__nav-items'>
+                <div>
+                    <svg class='menu__nav-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title>
+                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                    </svg>
+                </div>
+
+                <div>
+                    <p>Home</p>
+                </div>
+            </div>
+        </a>
+
+        <div class='menu__nav-items'>
+            <div>
+                <svg class='menu__nav-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title>
+                    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
+            </div>
+
+            <div>
+                <p>About</p>
+            </div>
+        </div>
+
+        <div class='menu__nav-items'>
+            <div>
+                <svg class='menu__nav-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title>
+                    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
+            </div>
+
+            <div>
+                <p>Services</p>
+            </div>
+        </div>
+        <a href='/login'>
+            <div class='menu__nav-items'>
+                <div>
+                    <svg class='menu__nav-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title>
+                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                    </svg>
+                </div>
+
+                <div>
+                    <p>Footer</p>
+                </div>
+            </div>
+        </a>
+    </nav> 
+</div>
+
+
+<style>
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: blue;
+    }
+
+    .menu__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .625rem;
+    }
+
+    .menu__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 .5rem
+    }
+
+    .menu__nav-icon {
+        width: 1.5rem;
+        fill: white;
+    }
+</style>
