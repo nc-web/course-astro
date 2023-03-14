@@ -1,0 +1,100 @@
+---
+//Cards
+import Card01 from '../cards/Card01.astro'
+
+//image
+import HTML5 from '/html5.png'
+import CSS3 from '/css3.png'
+import JS from '/javascript.png'
+import REACT from '/react.png'
+import Background from '/background-01.webp'
+---
+
+<section class="section" id="section-header">
+    <div class="section__title">
+      <slot class="section__title-title" name="section__title-title"
+        >LOREM IPSUM</slot
+      >
+      <slot class="section__title-subtitle" name="section__title-subtitle"
+        >Lorem ipsum</slot
+      >
+    </div>
+    <div class="section__cards">
+      <div class="section__cards-01">
+        <img class="section__cards-01-img" src={HTML5} alt="HTML5" />
+      </div>
+
+      <div class="section__cards-02">
+        <img class="section__cards-02-img" src={CSS3} alt="CSS3" />
+      </div>
+
+      <div class="section__cards03">
+        <Card01></Card01>
+      </div>
+
+      <div class="section__cards-04">
+        <img class="section__cards-03-img" src={JS} alt="JS" />
+      </div>
+
+      <div class="section__cards-05">
+        <img class="section__cards-04-img" src={REACT} alt="React" />
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+:host {
+      display: block;
+      height: 50rem;
+      margin: 0;
+      padding: 0;
+      background: url('../../../public/background-01.webp');
+    }
+
+    .section__title {
+      /* background-color: blueviolet; */
+    }
+
+    .section__title-title {
+      color: #ffd600;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .section__title-subtitle {
+      color: #ff6d00;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .section__cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      gap: 2rem;
+      top: 8rem;
+      left: 0rem;
+    }
+
+    .section__cards-01-img {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .section__cards-02-img {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .section__cards-03-img {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .section__cards-04-img {
+      width: 10rem;
+      height: 10rem;
+    }
+  </style>

@@ -1,0 +1,85 @@
+---
+import Logo from '/logo128.png'
+---
+
+<div class ='menu'>
+    <div class='menu__logo'>
+        <div>
+            <img src={Logo} alt='logo'/>
+        </div>
+        <div>
+            <h4>COMPANY</h4>
+        </div>
+    </div>
+    <div class='menu__nav'>
+        <nav>
+            <div class='menu__nav-items'>
+                <a href="/">
+                    <div>
+                        <svg class='menu__nav-icon' viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                    </div>
+                    <div>
+                        <p>HOME</p>
+                    </div>
+                 </a>
+                <div>
+                    <svg class='menu__nav-icon' viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                </div>
+                <div>
+                    <p>ABOUT</p>
+                </div>
+                <div>
+                    <svg class='menu__nav-icon' viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                </div>
+                <div>
+                    <p>SERVICES</p>
+                </div>
+                <a href="/login">
+                    <div>
+                        <svg class='menu__nav-icon' viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                    </div>
+                    
+                    <div>
+                        <p>LOGIN</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+</div>
+
+<style>
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+        background-color: darkslategrey;
+    }
+
+    .menu__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__nav-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .menu__nav-icon {
+        width: 24px;
+        fill: black;
+    }
+
+</style>
