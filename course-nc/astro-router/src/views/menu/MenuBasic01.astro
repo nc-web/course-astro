@@ -1,0 +1,97 @@
+---
+import Logo from '/logo128.png'
+---
+
+<div class="menu">
+    <div class="menu__company">
+        <div>
+            <img class="menu__company-logo" src={Logo} alt='Logo'/>
+        </div>
+        <h4 class="menu__company-name">COMPANY</h4>
+    </div>
+    <nav class="menu__nav">
+        <div class="menu__nav-ul">
+            <div>
+                <svg class='menu__nav-ul-icon' viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+            </div>
+            <div>
+                <p class="menu__nav-ul-name">HOME</p>
+            </div>
+        </div>
+        <div class="menu__nav-ul">
+            <div>
+                <svg class='menu__nav-ul-icon' viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+            </div>
+            <div>
+                <p class="menu__nav-ul-name">ABOUT AS</p>
+            </div>
+        </div>
+        <div class="menu__nav-ul">
+            <div>
+                <svg class='menu__nav-ul-icon' viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+            </div>
+            <div>
+                <p class="menu__nav-ul-name">SERVICES</p>
+            </div>
+        </div>
+        <a href="/login">
+            <div class="menu__nav-ul">
+                <div>
+                    <svg class='menu__nav-ul-icon' viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+                </div>
+                <div>
+                    <p class="menu__nav-ul-name">LOGIN</p>
+                </div>
+            </div>
+        </a>
+    </nav>
+</div>
+
+<style>
+    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem;
+        background-color: #1565C0;
+    }
+
+    .menu__company {
+        display: flex;
+    }
+
+    .menu__company-logo {
+        color: white;
+        width: 3rem;
+    }
+
+    .menu__nav {
+        display: flex;
+    }
+
+    .menu__nav-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .2rem;
+        border-radius: .5rem;
+        padding: 0 .8rem;
+    }
+
+    .menu__nav-ul:hover {
+        transition: .5s;
+        background-color: #757575;
+        cursor: pointer;
+    }
+
+    .menu__nav-ul-icon {
+        width: 1.5rem;
+        fill: white;
+    }
+
+    .menu__nav-ul-name {
+        color: white;
+    }
+
+</style>
