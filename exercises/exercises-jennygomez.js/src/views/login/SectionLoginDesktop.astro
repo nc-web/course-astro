@@ -1,0 +1,78 @@
+---
+// Components
+import Card01 from './card/Card01.astro'
+
+// Img
+import Profile from '/img/img-header.jpg'
+---
+
+<section class='section'>
+    <div class='section__cards'>
+        <div class='section__cards-01'>
+            <img class='section__cards-01-img' src={Profile} alt='Profile'>
+        </div>
+
+        <div class='section__cards-02-img'>
+            <img class='section__cards-02-img' src={Profile} alt='Profile'>
+        </div>
+
+        <div class='section__cards-03'>
+            <Card01></Card01>
+        </div>
+
+        <div class='section__cards-04'>
+            <img class='section__cards-04-img' src={Profile} alt='Profile'>
+        </div>
+
+        <div class='section__cards-05'>
+            <img class='section__cards-05-img' src={Profile} alt='Profile'>
+        </div>
+    </div>
+</section>
+
+<style>
+     :host {
+            display: block;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+    .section {
+            background: url('img/background-01.webp');
+            height: 50rem;
+        }
+
+        .section__cards {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 28rem;
+            left: 0;
+            gap: 2rem;
+            
+        }
+
+        .section__cards-01-img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .section__cards-02-img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .section__cards-04-img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .section__cards-05-img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+    `
+</style>
