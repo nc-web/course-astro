@@ -1,0 +1,120 @@
+---
+import logo from "/img/logo128.png";
+
+import MenuSocialMediaDesktop01MHD5 from "./MenuSocialMediaDesktop01MHD5.astro";
+---
+
+<div class="main">
+  <div class="menusm">
+    <MenuSocialMediaDesktop01MHD5></MenuSocialMediaDesktop01MHD5>
+  </div>
+  <div class="menu">
+    <div class="menu__company">
+      <div>
+        <img class="menu__company-img" src={logo} alt="Logo" />
+      </div>
+      <h4 class="menu__company-title">COMPANY</h4>
+    </div>
+    <nav class="menu__nav" id="menu__nav">
+
+      <ul class="menu__nav-ul-d">
+        <a href="#section-01">SECTION 01</a>
+      </ul>
+
+      <ul class="menu__nav-ul-d">
+        <a href="#section-02">SECTION 02</a>
+      </ul>
+
+      <ul class="menu__nav-ul-d">
+        <a href="#section-03">SECTION 03</a>
+      </ul>
+
+      <ul class="menu__nav-ul-d">
+        <a href="#section-04">SECTION 04</a>
+      </ul>
+
+      <ul class="menu__nav-ul-d">
+        <a href="./src/login/index.html">LOGIN</a>
+      </ul>
+      
+    </nav>
+  </div>
+</div>
+
+<style>
+    ul {
+      text-align: center;
+      margin: 0 0.3rem;
+      padding: 0.2rem 0.8rem;
+      border-radius: 0.5rem;
+    }
+
+    ul:hover {
+      transition: 0.5s;
+      transform: scale(1.2);
+      filter: drop-shadow(0.5rem 0.5rem 0.5rem #000000);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .main {
+      position: absolute;
+      width: 100%;
+      height: 60rem;
+      background-color: rgb(173, 173, 173);
+    }
+
+    .menusm {
+      display: flex;
+      justify-content: end;
+    }
+
+    .menu {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+      background-color: rgb(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    .menu__company {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.3rem;
+    }
+
+    .menu__company-img {
+      width: 3rem;
+      margin-right: 0.3rem;
+    }
+
+    .menu__company-title {
+      color: #616161;
+      font-size: 1.1rem;
+    }
+
+    .menu__button-svg {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.3rem;
+      border-radius: 50%;
+      fill: #ffffff;
+      background-color: #616161;
+      cursor: pointer;
+    }
+
+    .menu__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      color: #ffffff;
+    }
+
+</style>
