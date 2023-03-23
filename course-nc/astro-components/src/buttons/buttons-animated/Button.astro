@@ -1,0 +1,94 @@
+
+<script>
+
+    const playPauseButton = document.getElementById('play-pause-button');
+    const playIcon = document.getElementById('play-icon');
+    const pauseIcon = document.getElementById('pause-icon');
+
+    let isPlaying = false;
+
+    playPauseButton.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        playIcon.style.opacity = isPlaying ? '0' : '1';
+        pauseIcon.style.opacity = isPlaying ? '1' : '0';
+        playPauseButton.classList.toggle('playing');
+    })
+
+    // const barra = document.getElementById('slider');
+    
+    // const tagAudio = document.getElementById('reproductor');
+    // tagAudio.
+    
+    // barra.addEventListener('change', function(ev){
+    //     reproductor.volume = ev.currentTarget.value;
+    // }, true);
+
+</script>
+
+<div id="container">
+    <button id="play-pause-button">
+        <svg id="play-icon" viewBox="0 0 24 24" width="75" height="75">
+            <path d="M8 5v14l11-7z"></path>
+        </svg>
+    
+        <svg id="pause-icon" viewBox="0 0 24 24" width="75" height="75">
+            <path d="M6 4h5v16H6zM13 4h5v16h-5z"></path>
+        </svg>
+    </button>
+</div>
+
+<!-- <div id="barra">
+    <audio crossorigin="anonymous"  id='reproductor' autoplay></audio>
+
+    <input type="range" id="slider" value="0.5" min="0" max="1" step="0.1">
+</div> -->
+
+
+<style>
+
+    #container {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: #f50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #play-pause-button {
+        position: relative;
+        height: 3.1rem;
+        width: 3.1rem;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+
+    #play-icon, #pause-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        transition: opacity .2s ease-in-out;
+    }
+
+    #play-icon {
+        opacity: 1;
+    }
+
+    #pause-icon {
+        opacity: 0;
+    }
+
+    #play-pause-button.playing #play-icon {
+        opacity: 0;
+    }
+
+    #play-pause-button.playing #pause-icon {
+        opacity: 1;
+    }
+</style>

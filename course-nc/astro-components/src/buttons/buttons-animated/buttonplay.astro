@@ -1,0 +1,66 @@
+
+<script>
+    let listToggle = 0
+    const classes = [ 'play', 'pause' ]
+
+    const toogleClass = () => {
+        const sig = document.getElementById('signifier')
+        sig.classList = classes[listToggle++ % classes.length]
+    }
+</script>
+
+<div class="button" onclick="toogleClass()">
+    <div id="signifier" class="add"></div>
+</div>
+
+<style>
+    .button {
+        position: relative;
+        height: 3.1rem;
+        width: 3.1rem;
+        background-color: #f50;
+        border-radius: 50%;
+        padding-top: .625rem;
+        box-sizing: border-box;
+    }
+
+    .add {
+        position: absolute;
+        margin: auto;
+        height: 1.2rem;
+        width: .25rem;
+        background-color: #fff;
+        top: .9rem;
+        left: 1.45rem;
+    }
+
+    .add::before, .add::after{
+        position: absolute;
+        top: .5rem;
+        left: -.5rem;
+        content: '';
+        height: .25rem;
+        width: 1.2rem;
+        background-color: #fff;
+    }
+
+    .play {
+        height: 0;
+        width: 0;
+        margin-left: .9rem;
+        border-left: 1.5rem solid #fff;
+        border-top: .8rem solid transparent;
+        border-bottom: .8rem solid transparent;
+    }
+
+    .pause {
+        height: 1.2rem;
+        width: 1.2rem;
+        border: none;
+        margin-left: .9rem;
+        border-right: .3rem solid #fff;
+        border-left: .3rem solid #fff;
+        box-sizing: border-box;
+    }
+
+</style>
