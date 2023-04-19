@@ -3,13 +3,11 @@
 import '../assets/css/global-styles.css'
 
 // Views
-import Menu from '../views/menu/Menu.astro'
-import SectionHeader from '../views/section-header/index.astro'
-import SectionAboutAs from '../views/section-about-us/AboutAs.astro'
+import Menu from '../views/menu/MenuLogin.astro'
 ---
 
 <html lang="en">
-	<head>
+    <head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
@@ -17,8 +15,18 @@ import SectionAboutAs from '../views/section-about-us/AboutAs.astro'
 		<title>Astro</title>
 	</head>
 	<body>
-		<Menu />
-		<SectionHeader />
-		<SectionAboutAs />
+		<section class="section">
+			<Menu />
+            <div class="section-logi">
+                <h4>SECTION LOGIN</h4>
+            </div>
+            <div>
+                
+            </div>
+        </section>
 	</body>
 </html>
+
+<style>
+    
+</style>
