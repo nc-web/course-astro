@@ -3,7 +3,9 @@
 import '../assets/css/global-styles.css'
 
 // Views
-import Menu from '../views/menu/MenuBasic01.astro'
+import Menu from '../views/menu/Menu.astro'
+import SectionHeader from '../views/section-header/Header.astro'
+import SectionAboutAs from '../views/section-about-as/AboutAs.astro'
 ---
 
 <html lang="en">
@@ -15,6 +17,8 @@ import Menu from '../views/menu/MenuBasic01.astro'
 		<title>Astro</title>
 	</head>
 	<body>
-		<Menu></Menu>
+		<Menu />
+		<SectionHeader />
+		<SectionAboutAs />
 	</body>
 </html>
