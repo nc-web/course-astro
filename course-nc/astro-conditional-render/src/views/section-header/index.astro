@@ -1,35 +1,35 @@
 ---
 import HeaderDesktop from './HeaderDesktop.astro'
 import HeaderTableLaptop from './HeaderTableLaptop.astro'
-import HeaderMobile from './HeaderMobile.astro' 
+import HeaderMobile from './HeaderMobile.astro'
 
-var screen = 'desktop'
+var screenDevice = 'desktop'
+// import { screenDevice } from './index.js'
 ---
 
 <script>
-
-    function screenRender() {
-        if (window.screen.width > 1024) {
-        const screen = 'desktop'
-        }
-        if (window.screen.width > 425 && window.screen.width <= 1024) {
-            const screen = 'tableLaptop'
-        }
-        if (
+    if (window.screen.width > 1024) {
+        screenDevice = 'desktop'
+        console.log(screenDevice)
+    }
+    
+    if (window.screen.width > 425 && window.screen.width <= 1024) {
+        screenDevice = 'tableLaptop'
+        console.log(screenDevice)
+    }
+    
+    if (
         window.screen.width <= 425 ||
         window.screen.width <= 375 ||
         window.screen.width <= 320
         ) {
-        const screen = 'mobile'
-        }
+        screenDevice = 'mobile'
+        console.log(screenDevice)
     }
-
-    screenRender()
-    
 </script>
 
 
-{ screen === 'desktop' ? <HeaderDesktop/> : <HeaderMobile/>  }
+{ screenDevice === 'desktop' ? <HeaderDesktop/> : <HeaderMobile/>  }
 
 
 

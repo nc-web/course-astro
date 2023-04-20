@@ -9,7 +9,7 @@ const size = {
     desktop: '2560px'
   }
 
-  export const screen = {
+  export const screenDevice = {
     mobileS: `(max-width: ${size.mobileS})`,
     mobileM: `(max-width: ${size.mobileM})`,
     mobileL: `(max-width: ${size.mobileL})`,
